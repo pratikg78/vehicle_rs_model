@@ -60,32 +60,6 @@ joblib.dump(pca, "models/pca.pkl")
 joblib.dump(df, "models/dataFrame.pkl")
 
 
-# # Choose an example car
-# index = 207
-# distances, indices = nn_model.kneighbors([reduced_features[index]], n_neighbors=6)
-
-# # Show recommendations
-# recommended_indices = indices[0][1:]
-# recommendations = df.iloc[recommended_indices][['Car Make', 'Car Model', 'Year', 'Price']]
-# print(f"Recommendations for car at index {index} ({df.loc[index, 'Car Make']} {df.loc[index, 'Car Model']}):")
-# print(recommendations)
-
-# # Evaluate cosine similarity
-# avg_cosine_similarity = 1 - distances[0][1:].mean()
-# print(f"\nAverage Cosine Similarity of Recommendations: {avg_cosine_similarity:.4f}")
-
-
-
-
-# joblib.dump(nn_model, 'models/_model.pkl')
-
-
-
-
-# # Save encoders to disk
-# joblib.dump(district_encoder, 'models/District_encoder.pkl')
-# joblib.dump(village_encoder, 'models/Village_encoder.pkl')
-# joblib.dump(soilQuality_encoder, 'models/Soil_Quality_encoder.pkl')
 
 
 
